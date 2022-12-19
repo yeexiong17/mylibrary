@@ -1,0 +1,31 @@
+/* Table Id */
+#Tb {
+    width: 70%;
+    margin: auto;
+    margin-top: 200px;
+    font-size: 1.1rem;
+}
+
+/* Delete Book Button */
+#tableBtn {
+    font-weight: 500;
+    width: 6rem;
+    background-color: #FFFBEB;
+    color: red;
+    border-color: red;
+    font-size: 1.1rem;
+}
+
+#tableBtn:hover {
+    background-color: red;
+    color: #FFFBEB;
+}
+
+#tableBtn:active {
+    background-color: rgb(211, 0, 0);
+}
+
+#selection {
+    width: 80%;
+    background-color: aliceblue;
+}

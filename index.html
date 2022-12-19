@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/general.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/table.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+    <nav>
+        <div id="top-nav">
+            <div>
+                <h1 class="nav-header">My Library</h1>
+            </div>
+
+            <div class="addBookBtn">
+                <button type="button" class="btn btn-primary" id="open-form" onclick="openForm()">&#43; New
+                    Book</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="newBookForm" id="myForm">
+        <form action="" class="form-container">
+            <h1>Enter New Book</h1>
+
+            <label for="book-name">Book Name : </label>
+            <input type="text" placeholder="eg. 'Harry Potter'" name="book-name" required>
+
+            <label for="author-name">Author Name : </label>
+            <input type="text" placeholder="eg. 'J. K. Rowling'" name="author-name" required>
+
+            <label for="numOfPage">Pages : </label>
+            <input type="number" min="1" placeholder="eg. '150'" name="numOfPage" id="input-num" required>
+
+            <label for="read">Have you read the book? : </label>
+            <select type="text" name="read" required>
+                <option value="">-</option>
+                <option value="yes">Yes</option>
+                <option value="not-yet">Not Yet</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary" id="close-form" onclick="closeForm()">Done !</button>
+            <button type="button" class="btn btn-primary" id="cancel" onclick="closeForm2()">Cancel</button>
+
+        </form>
+    </div>
+    <div id="blur-screen">
+        <main>
+            <table class="table" id="Tb">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Book Name</th>
+                        <th>Book Author</th>
+                        <th>No. of Pages</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </main>
+    </div>
+</body>
+
+<script src="script.js" defer></script>
+
+</html>
